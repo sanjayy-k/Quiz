@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="5(css).css">
+</head>
+<body >
+    <div class="a">
+        <div class="a1">
+            <p>1.Who created Javascript ?</p><br>
+            <input type="radio" id="opt1" name="answer" value="Brendean Eich">
+            <label for="text">Brendean Eich</label>
+            <input type="radio" id="opt2" name="answer" value="DennisRitchie">
+            <label for="text">Dennis Ritchie</label><br><br><br><br>
+            <input type="radio" id="opt3" name="answer" value="Elon Musk">
+            <label for="text">Elon Musk</label>
+            <input type="radio" id="opt4" name="answer" value="Van Rossum">
+            <label for="text">Van Rossum</label>
+        </div>
+        <button type="button" onclick="checkanswer()">SUBMIT</button>
+        <p id="result"></p>
+    </div><br>
+    <div class="s1">
+        <div class="a2">
+            <p>2. JavaScript was created in the year?</p><br>
+            <input type="radio" id="opt11" name="answer1" value="1997">
+            <label for="opt11">1997</label>
+            <input type="radio" id="opt12" name="answer1" value="2000">
+            <label for="opt12">2000</label><br><br><br><br>
+            <input type="radio" id="opt13" name="answer1" value="1995">
+            <label for="opt13">1995</label>
+            <input type="radio" id="opt14" name="answer1" value="1998">
+            <label for="opt14">1998</label>
+        </div>
+        <button type="button" onclick="checkanswer2()">SUBMIT</button>
+        <p id="result2"></p>
+    </div><br>
+    <div class="s2">
+        <div class="a2">
+            <p>3. Inside which HTML element do we put JavaScript?</p><br>
+            <input type="radio" id="opt21" name="answer2" value="JavaScript">
+            <label for="opt21">JavaScript</label>
+            <input type="radio" id="opt22" name="answer2" value="JS">
+            <label for="opt22">JS</label><br><br><br><br>
+            <input type="radio" id="opt23" name="answer2" value="Scripting">
+            <label for="opt23">Scripting</label>
+            <input type="radio" id="opt24" name="answer2" value="Script">
+            <label for="opt24">Script</label>
+        </div>
+        <button type="button" onclick="checkanswer3()">SUBMIT</button>
+        <p id="result3"></p>
+    </div><br>
+    
+    <div class="s3">
+        <div class="a2">
+            <p>4. JavaScript is a ____ side programming language?</p><br>
+            <input type="radio" id="opt31" name="answer3" value="Client">
+            <label for="opt31">Client</label>
+            <input type="radio" id="opt32" name="answer3" value="Server">
+            <label for="opt32">Server</label><br><br><br><br>
+            <input type="radio" id="opt33" name="answer3" value="Both">
+            <label for="opt33">Both</label>
+            <input type="radio" id="opt34" name="answer3" value="None">
+            <label for="opt34">None</label>
+        </div>
+        <button type="button" onclick="checkanswer4()">SUBMIT</button>
+        <p id="result4"></p>
+    </div><br>
+    
+    <div class="s4">
+        <div class="a2">
+            <p>5. Which of the following is an event listener in JavaScript?</p><br>
+            <input type="radio" id="opt41" name="answer4" value="Onclick">
+            <label for="opt41">Onclick</label>
+            <input type="radio" id="opt42" name="answer4" value="Blur">
+            <label for="opt42">Blur</label><br><br><br><br>
+            <input type="radio" id="opt43" name="answer4" value="click">
+            <label for="opt43">click</label>
+            <input type="radio" id="opt44" name="answer4" value="click()">
+            <label for="opt44">click()</label>
+        </div>
+        <button type="button" onclick="checkanswer5()">SUBMIT</button>
+        <p id="result5"></p>
+    </div>
+    <script>
+        //JAVASCRIPT PART
+        function checkanswer(){
+            const correctAnswer="Brendean Eich";//This the is Correct answer
+            const selectedOption=document.querySelector('input[name="answer"]:checked');
+        if(selectedOption){
+            if(selectedOption.value===correctAnswer){
+document.getElementById('result').textContent="Correct! Breandean Eich Created JavaScript";
+            }else{
+                document.getElementById('result').textContent="Wrong answer.Try again.";
+
+            }
+        }else{
+            document.getElementById('result').textContent="Please Select an Option";
+        }
+        }
+        function checkanswer2() {
+    const correctAnswer = "1995"; 
+    const selectedOption = document.querySelector('input[name="answer1"]:checked');
+    if (selectedOption) {
+        if (selectedOption.value === correctAnswer) {
+            document.getElementById('result2').textContent ="Correct! JavaScript was created in 1995";
+        } else {
+            document.getElementById('result2').textContent ="Wrong answer. Try again.";
+        }
+    } else {
+        document.getElementById('result2').textContent ="Please Select an Option";
+    }
+}
+function checkanswer3() {
+    const correctAnswer = "Script"; 
+    const selectedOption = document.querySelector('input[name="answer2"]:checked');
+    if (selectedOption) {
+        if (selectedOption.value === correctAnswer) {
+            document.getElementById('result3').textContent = "Correct! JavaScript code is put inside the <script> element";
+        } else {
+            document.getElementById('result3').textContent = "Wrong answer. Try again.";
+        }
+    } else {
+        document.getElementById('result3').textContent = "Please Select an Option";
+    }
+}
+function checkanswer4() {
+    const correctAnswer = "Both"; 
+    const selectedOption = document.querySelector('input[name="answer3"]:checked');
+    if (selectedOption) {
+        if (selectedOption.value === correctAnswer) {
+            document.getElementById('result4').textContent = "Correct! JavaScript is a client-side and server-side programming language";
+        } else {
+            document.getElementById('result4').textContent = "Wrong answer. Try again.";
+        }
+    } else {
+        document.getElementById('result4').textContent = "Please Select an Option";
+    }
+}
+
+function checkanswer5() {
+    const correctAnswer = "Onclick"; 
+    const selectedOption = document.querySelector('input[name="answer4"]:checked');
+    if (selectedOption) {
+        if (selectedOption.value === correctAnswer) {
+            document.getElementById('result5').textContent = "Correct! 'Onclick' is an event listener in JavaScript";
+        } else {
+            document.getElementById('result5').textContent = "Wrong answer. Try again.";
+        }
+    } else {
+        document.getElementById('result5').textContent = "Please Select an Option";
+    }
+}
+    </script>
+</body>
+</html>

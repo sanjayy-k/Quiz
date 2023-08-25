@@ -1,0 +1,42 @@
+body{
+    background-color:beige;
+}
+.a,.s2,.s3,.s4{
+    border: 1px solid black;
+    height: 250px;
+    width:500px;
+    border-width: 3px;
+    text-align: center;
+}
+.a1{
+    text-align: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.a2{
+    text-align: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button{
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: steelblue;
+}
+.s1{
+    border: 1px solid black;
+    height: 250px;
+    width:500px;
+    border-width: 3px;
+    text-align: center;
+}
+.s1{
+    position:relative;left: 550px;bottom: 273px;
+}
+.s2{
+    position: relative;bottom: 220px;
+}
+.s3{
+    position: relative;left: 550px; bottom:493px;
+}
+.s4{
+    position: relative;bottom: 433px; left: 250px;
+}
